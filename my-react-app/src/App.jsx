@@ -11,7 +11,7 @@ function App() {
     <>
       <h1>coursera - joposhniki</h1>
       <div>
-        <Tweet />
+        <Tweet text="lorem ipsum" author="madame" date="18-jul-2023" />
       </div>
     </>
   )

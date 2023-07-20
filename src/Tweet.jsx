@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Card } from "react-bootstrap"
+import "./Tweet.css"
 
 function Tweet(props) {
   const [counter, setCounter] = useState(0)
@@ -17,16 +17,17 @@ function Tweet(props) {
 
   return (
     <>
-      <Card border="primary" style={{ width: "18rem" }}>
-        <Card.Header>User {id}</Card.Header>
-        <Card.Body>
-          <Card.Title>on {date}</Card.Title>
-          <Card.Text>{body}</Card.Text>
-          <h6>Likes: {counter}</h6>
+      <div className="card">
+        <h3 className="username">
+          @user{id} | on {date}
+        </h3>
+        <p>{body}</p>
+        <div className="counter-tab">
+          <div className="like">Likes: {counter}</div>
           <button onClick={increment}>+1</button>{" "}
           <button onClick={decrement}>-1</button>
-        </Card.Body>
-      </Card>
+        </div>
+      </div>
     </>
   )
 }

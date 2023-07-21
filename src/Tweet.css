@@ -1,7 +1,7 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/* separate object styling */
 .card {
   border: solid 1px #e1e8ed;
   width: 30vw;
@@ -43,5 +43,4 @@ button:hover {
 button:active {
   background-color: #1da1f2;
   color: white;
-  /* transition: background-color 1s; */
 }

@@ -13,7 +13,7 @@ function Tweet(props) {
   }
 
   const { body, id } = props
-  const date = new Date().toLocaleDateString() // Today's date
+  const date = new Date().toLocaleDateString() // Today's date, possibly to upd to display differently
 
   return (
     <>

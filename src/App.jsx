@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/posts")
+      .get("https://jsonplaceholder.typicode.com/posts") //consider different api source
       .then((response) => {
         const tweets = response.data
         setTweets(tweets)
@@ -17,6 +17,8 @@ function App() {
         console.error(error)
       })
   }, [])
+
+  //t container to set up a responsive grid
 
   return (
     <>
